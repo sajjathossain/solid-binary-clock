@@ -1,4 +1,4 @@
-import {useStore} from '@nanostores/solid';
+import { useStore } from '@nanostores/solid';
 import { atom } from 'nanostores';
 
 const $timeSectionsAtom = atom<string[][]>([]);
@@ -20,5 +20,5 @@ export default {
   },
   useTimeSections: () => {
     return useStore($timeSectionsAtom);
-  }
+  },
 } as const;

@@ -7,7 +7,7 @@ import { TimeSection } from '../time-section';
 const names = ['H', 'M', 'S'] as const;
 
 export const Container = () => {
-  const timeSectionsStore = store.useTimeSections()
+  const timeSectionsStore = store.useTimeSections();
 
   createEffect(() => {
     refresh();
